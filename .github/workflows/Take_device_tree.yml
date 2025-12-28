@@ -1,4 +1,4 @@
-name: Build Complete Device Tree (dtb + dtbo) For LineageOS
+name: Build Full Device Tree (DTB+DTBO) | MTK 明文DTS.0 Fix | PyPI Only
 on:
   workflow_dispatch:
 
@@ -7,65 +7,105 @@ permissions:
   pull-requests: read
 
 jobs:
-  build-full-device-tree:
+  build-device-tree-final-perfect:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
-      - name: Step 1 - 检出仓库源码
+      - name: Step 1 - Checkout Repo (含vendor_boot + dtbo文件夹)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Step 2 - 安装依赖
+      - name: Step 2 - 安装所有依赖 (纯PyPI extract-dtb + 核心编译工具)
         run: |
-          echo "⚡ 安装系统依赖和PyPI工具"
+          echo "⚡ Install all dependencies (PyPI extract-dtb only)"
           sudo apt update -y && sudo apt install -y --no-install-recommends \
-            device-tree-compiler python3-pip python3-setuptools lz4 android-sdk-libsparse-utils
+            device-tree-compiler \
+            python3-pip \
+            python3-setuptools \
+            lz4 \
+            android-sdk-libsparse-utils
+          # 纯PyPI安装extract-dtb，无升级、无git克隆，绝对无权限报错
           sudo pip3 install extract-dtb
-          echo "✅ 依赖安装完成"
+          # 验证安装成功
+          extract-dtb --version
+          echo "✅ All dependencies installed successfully!"
 
-      - name: Step 3 - 提取+编译设备树（修复警告屏蔽参数）
+      - name: Step 3 - 核心构建：分类型处理 DTB(二进制) + DTBO(明文DTS源码) ✔ 根治魔数错误
         run: |
+          # 固定目录 - 完美匹配你的仓库结构，无需任何修改
           WORK_DIR=${{ github.workspace }}
-          VENDOR_BOOT_DTB=$WORK_DIR/vendor_boot/dtb
-          DTBO_FILE=$WORK_DIR/dtbo/dts/dts.0
+          # 主设备树：二进制打包镜像
+          MAIN_DTB_BIN=$WORK_DIR/vendor_boot/dtb
+          # DTBO叠加层：明文DTS源码文件 (你的核心发现！)
+          DTBO_DTS_SRC=$WORK_DIR/dtbo/dts/dts.0
+          # 输出目录：自动创建分类文件夹
           OUTPUT_DIR=$WORK_DIR/device_tree
           mkdir -p $OUTPUT_DIR/main_dtb $OUTPUT_DIR/overlay_dtbo
+          
+          # ===== 前置校验：必须存在两个核心文件 =====
+          if [ ! -f "$MAIN_DTB_BIN" ]; then
+            echo "❌ Error: $MAIN_DTB_BIN 主DTB二进制文件不存在！"
+            exit 1
+          fi
+          if [ ! -f "$DTBO_DTS_SRC" ]; then
+            echo "❌ Error: $DTBO_DTS_SRC DTBO明文源码文件不存在！"
+            exit 1
+          fi
+          echo "✅ 所有核心文件校验通过，开始构建..."
 
-          # 校验核心文件
-          [ ! -f "$VENDOR_BOOT_DTB" ] && echo "❌ 未找到主dtb" && exit 1
-          [ ! -f "$DTBO_FILE" ] && echo "❌ 未找到dtbo文件" && exit 1
-
-          # 解包主dtb（用 -q 静默模式屏蔽警告，兼容dtc 1.7.0）
-          echo "🔧 解包主设备树"
-          extract-dtb -o $OUTPUT_DIR/main_dtb $VENDOR_BOOT_DTB
+          # ===== 处理① 主设备树 vendor_boot/dtb (二进制打包镜像) =====
+          echo -e "\n🔧 [1] 解包 主DTB二进制打包镜像 (PyPI extract-dtb)"
+          extract-dtb -o $OUTPUT_DIR/main_dtb $MAIN_DTB_BIN
+          # 静默编译：二进制dtb → dts源码 → 标准dtb，兼容LineageOS
           for dtb_file in $OUTPUT_DIR/main_dtb/*.dtb; do
-            [ -f "$dtb_file" ] && dtc -q -I dtb -O dts -o "${dtb_file%.dtb}.dts" "$dtb_file"  # -q 静默屏蔽警告
-            [ -f "$dtb_file" ] && dtc -q -I dts -O dtb -o "$dtb_file" "${dtb_file%.dtb}.dts"
+            if [ -f "$dtb_file" ]; then
+              dtc -q -I dtb -O dts -o "${dtb_file%.dtb}.dts" "$dtb_file"
+              dtc -q -I dts -O dtb -o "$dtb_file" "${dtb_file%.dtb}.dts"
+            fi
           done
 
-          # 处理dtbo（同样用 -q 静默模式）
-          echo "🔧 处理dtbo叠加层"
-          cp -f $DTBO_FILE $OUTPUT_DIR/overlay_dtbo/dtbo_raw
-          dtc -q -I dtb -O dts -o $OUTPUT_DIR/overlay_dtbo/dtbo.dts $OUTPUT_DIR/overlay_dtbo/dtbo_raw
-          dtc -q -I dts -O dtb -o $OUTPUT_DIR/overlay_dtbo/dtbo.dtb $OUTPUT_DIR/overlay_dtbo/dtbo.dts
+          # ===== 处理② DTBO叠加层 dtbo/dts/dts.0 (明文DTS源码) ✔ 核心修复，根治魔数错误 =====
+          echo -e "\n🔧 [2] 直接编译 DTBO明文DTS源码 (无需解包，直接编译，无魔数错误)"
+          # 复制明文源码到输出目录，方便后续修改定制
+          cp -f $DTBO_DTS_SRC $OUTPUT_DIR/overlay_dtbo/dtbo_original.dts
+          # 核心命令：明文DTS源码 → 标准DTBO二进制文件 (dtbo.dtb)，无任何魔数问题！
+          dtc -q -I dts -O dtb -o $OUTPUT_DIR/overlay_dtbo/dtbo.dtb $DTBO_DTS_SRC
+          # 生成可直接刷入/编译的dtbo.img (LineageOS编译必备)
           mkdtboimg cfg_create $OUTPUT_DIR/overlay_dtbo/dtbo.img $OUTPUT_DIR/overlay_dtbo/dtbo.dtb
 
-          # 校验结果
-          MAIN_CNT=$(ls -1 $OUTPUT_DIR/main_dtb/*.dtb 2>/dev/null | wc -l)
-          DTBO_CNT=$(ls -1 $OUTPUT_DIR/overlay_dtbo/*.dtb $OUTPUT_DIR/overlay_dtbo/*.img 2>/dev/null | wc -l)
-          [ $MAIN_CNT -eq 0 ] || [ $DTBO_CNT -eq 0 ] && echo "❌ 生成失败" && exit 1
-          echo "✅ 构建完成！主dtb：$MAIN_CNT 个，dtbo文件：$DTBO_CNT 个"
-          ls -lh $OUTPUT_DIR/main_dtb/
-          ls -lh $OUTPUT_DIR/overlay_dtbo/
-          ls -R $OUTPUT_DIR > $OUTPUT_DIR/DEVICE_TREE_FULL_LIST.txt
+          # ===== 结果校验：确保生成有效文件 =====
+          MAIN_DTB_COUNT=$(ls -1 $OUTPUT_DIR/main_dtb/*.dtb 2>/dev/null | wc -l)
+          DTBO_VALID=$( [ -f "$OUTPUT_DIR/overlay_dtbo/dtbo.dtb" ] && [ -f "$OUTPUT_DIR/overlay_dtbo/dtbo.img" ] && echo 1 || echo 0 )
+          
+          if [ $MAIN_DTB_COUNT -eq 0 ]; then
+            echo "❌ Error: 主DTB解包失败，未生成任何dtb文件！"
+            exit 1
+          fi
+          if [ $DTBO_VALID -eq 0 ]; then
+            echo "❌ Error: DTBO源码编译失败，未生成dtbo.dtb/img！"
+            exit 1
+          fi
 
-      - name: Step 4 - 推送至仓库
+          # ===== 输出构建成功信息 =====
+          echo -e "\n🎉 ✅ 设备树构建 100% 成功！无任何报错！"
+          echo "📌 主设备树文件数: $MAIN_DTB_COUNT 个"
+          echo "📌 DTBO文件已生成: dtbo.dtb + dtbo.img (明文源码编译)"
+          echo -e "\n📂 主DTB文件列表:"
+          ls -lh $OUTPUT_DIR/main_dtb/
+          echo -e "\n📂 DTBO文件列表:"
+          ls -lh $OUTPUT_DIR/overlay_dtbo/
+          # 生成文件清单
+          ls -R $OUTPUT_DIR > $OUTPUT_DIR/DEVICE_TREE_COMPLETE_LIST.txt
+
+      - name: Step 4 - 自动推送设备树到仓库 (无变更则跳过)
         run: |
+          echo -e "\n📤 准备推送设备树文件到仓库..."
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add device_tree/
-          git commit -m "build: full device tree (dtb+dtbo) $(date +'%Y-%m-%d %H:%M:%S')" -a || echo "ℹ️ 无新变更"
+          git add $WORK_DIR/device_tree/
+          # 无文件变更则静默跳过，不报错
+          git commit -m "build: perfect device tree (DTB bin + DTBO plain DTS) $(date +'%Y-%m-%d %H:%M:%S')" -a || echo "ℹ️ 无新的设备树文件变更，跳过提交"
           git push origin HEAD:${{ github.ref }}
-          echo "✅ 推送成功！"
+          echo "✅ 设备树文件已成功推送至仓库！"
