@@ -1,5 +1,7 @@
+# 工作流名称
 name: Extract Vendor_Boot & Build Device Tree For LineageOS
 
+# 触发规则：手动触发+文件更新自动触发
 on:
   workflow_dispatch:
   push:
@@ -7,8 +9,12 @@ on:
     paths:
       - 'Image/vendor_boot.img'
 
+# ========== 权限启用 ==========
 permissions:
-  contents: write
+  contents: write        # 允许读写仓库内容、推送文件
+  pull-requests: write   # 兼容PR操作
+  id-token: write        # 身份令牌认证
+  actions: read          # 读取action运行状态
 
 jobs:
   extract-and-build-dtb:
@@ -18,8 +24,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          # ========== 强制配置身份认证 ==========
+          token: ${{ github.token }}
+          persist-credentials: true
 
-      - name: Install all required dependencies & tools
+      - name: Install all required dependencies & tools (修复Ubuntu24.04依赖)
         run: |
           echo "🔧 开始安装编译和解包所需依赖..."
           sudo apt update -y && sudo apt upgrade -y
@@ -28,17 +37,17 @@ jobs:
           sudo apt install -y device-tree-compiler libfdt-dev
           echo "✅ 所有依赖安装完成！"
 
-      - name: Download Android boot/unpack tools (critical for vendor_boot.img)
+      - name: Download Android boot/unpack tools (无权限克隆问题，用压缩包下载)
         run: |
           echo "🔧 下载安卓镜像解包专用工具..."
-          # 关键修复：HTTPS 改为 SSH 克隆，解决匿名访问权限问题
-          git clone git@github.com:corsicanu/extract-dtb.git $HOME/extract-dtb || { echo "🔄 重试克隆 extract-dtb..."; git clone git@github.com:corsicanu/extract-dtb.git $HOME/extract-dtb; }
-          git clone git@github.com:osm0sis/mkbootimg.git $HOME/mkbootimg || { echo "🔄 重试克隆 mkbootimg..."; git clone git@github.com:osm0sis/mkbootimg.git $HOME/mkbootimg; }
-          # Magiskboot 用 wget 直接下载，增加超时重试
+          wget --timeout=30 --tries=3 https://github.com/corsicanu/extract-dtb/archive/refs/heads/master.zip -O $HOME/extract-dtb.zip
+          unzip -q $HOME/extract-dtb.zip -d $HOME && mv $HOME/extract-dtb-master $HOME/extract-dtb
+          wget --timeout=30 --tries=3 https://github.com/osm0sis/mkbootimg/archive/refs/heads/master.zip -O $HOME/mkbootimg.zip
+          unzip -q $HOME/mkbootimg.zip -d $HOME && mv $HOME/mkbootimg-master $HOME/mkbootimg
           wget --timeout=30 --tries=3 https://github.com/topjohnwu/Magisk/releases/latest/download/magiskboot -O $HOME/magiskboot
           chmod +x $HOME/magiskboot $HOME/extract-dtb/extract-dtb.py
           echo "✅ 解包工具下载完成！"
-        timeout-minutes: 5  # 增加超时限制，避免卡壳
+        timeout-minutes: 5
 
       - name: Check vendor_boot.img & Create work directories
         run: |
@@ -73,24 +82,31 @@ jobs:
           done
           mkdir -p $GITHUB_WORKSPACE/device_tree
           cp -r $GITHUB_WORKSPACE/work/dts_source/* $GITHUB_WORKSPACE/device_tree/
-          [ -f "$GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk" ] && cp -r $GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk $GITHUB_WORKSPACE/device_tree/
+          [ -d "$GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk" ] && cp -r $GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk $GITHUB_WORKSPACE/device_tree/
           [ -f "$GITHUB_WORKSPACE/work/vendor_boot_unpack/config" ] && cp $GITHUB_WORKSPACE/work/vendor_boot_unpack/config $GITHUB_WORKSPACE/device_tree/
           echo "✅ 设备树构建完成！目录: device_tree/ （直接兼容LineageOS）"
 
       - name: Clean redundant files & Optimize device tree structure
         run: |
           echo "🧹 清理冗余文件，优化设备树目录结构..."
-          rm -rf $GITHUB_WORKSPACE/work
+          rm -rf $GITHUB_WORKSPACE/work $HOME/*.zip $HOME/extract-dtb $HOME/mkbootimg $HOME/magiskboot
           find $GITHUB_WORKSPACE/device_tree -name "*.tmp" -delete
           find $GITHUB_WORKSPACE/device_tree -name "*.bak" -delete
           echo "✅ 清理完成，设备树目录纯净可用！"
 
-      - name: Commit & Push Device Tree to Current Repository
+      - name: Commit & Push Device Tree (========== 完整身份声明 + 强制认证推送 ==========)
         run: |
           echo "📤 开始提交设备树文件到仓库..."
+          # ========== 解决「workflow不清楚你是谁」的核心身份声明 ==========
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global credential.helper store
+          echo "https://github.com:${{ github.actor }}:${{ github.token }}" > ~/.git-credentials
+          
+          # 提交文件
           git add device_tree/
           git commit -m "build(device-tree): extract and build from vendor_boot.img ✅" -m "Source: Image/vendor_boot.img" || echo "ℹ️ 无新的设备树文件需要提交"
-          git push origin HEAD:${GITHUB_REF#refs/heads/}
+          
+          # ========== 重点：强制使用认证令牌推送，彻底解决推送被拒 ==========
+          git push https://${{ github.token }}@github.com/${{ github.repository }}.git HEAD:${GITHUB_REF#refs/heads/} --force-with-lease
           echo "✅ 设备树已成功推送到仓库！目录：device_tree/"
