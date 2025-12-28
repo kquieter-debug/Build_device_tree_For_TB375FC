@@ -25,7 +25,7 @@ jobs:
           sudo pip3 install extract-dtb
           echo "✅ 依赖安装完成"
 
-      - name: Step 3 - 提取+编译设备树（屏蔽良性警告）
+      - name: Step 3 - 提取+编译设备树（修复警告屏蔽参数）
         run: |
           WORK_DIR=${{ github.workspace }}
           VENDOR_BOOT_DTB=$WORK_DIR/vendor_boot/dtb
@@ -37,19 +37,19 @@ jobs:
           [ ! -f "$VENDOR_BOOT_DTB" ] && echo "❌ 未找到主dtb" && exit 1
           [ ! -f "$DTBO_FILE" ] && echo "❌ 未找到dtbo文件" && exit 1
 
-          # 解包主dtb（屏蔽警告）
+          # 解包主dtb（用 -q 静默模式屏蔽警告，兼容dtc 1.7.0）
           echo "🔧 解包主设备树"
           extract-dtb -o $OUTPUT_DIR/main_dtb $VENDOR_BOOT_DTB
           for dtb_file in $OUTPUT_DIR/main_dtb/*.dtb; do
-            [ -f "$dtb_file" ] && dtc -W no-warning -I dtb -O dts -o "${dtb_file%.dtb}.dts" "$dtb_file"
-            [ -f "$dtb_file" ] && dtc -W no-warning -I dts -O dtb -o "$dtb_file" "${dtb_file%.dtb}.dts"
+            [ -f "$dtb_file" ] && dtc -q -I dtb -O dts -o "${dtb_file%.dtb}.dts" "$dtb_file"  # -q 静默屏蔽警告
+            [ -f "$dtb_file" ] && dtc -q -I dts -O dtb -o "$dtb_file" "${dtb_file%.dtb}.dts"
           done
 
-          # 处理dtbo（屏蔽警告）
+          # 处理dtbo（同样用 -q 静默模式）
           echo "🔧 处理dtbo叠加层"
           cp -f $DTBO_FILE $OUTPUT_DIR/overlay_dtbo/dtbo_raw
-          dtc -W no-warning -I dtb -O dts -o $OUTPUT_DIR/overlay_dtbo/dtbo.dts $OUTPUT_DIR/overlay_dtbo/dtbo_raw
-          dtc -W no-warning -I dts -O dtb -o $OUTPUT_DIR/overlay_dtbo/dtbo.dtb $OUTPUT_DIR/overlay_dtbo/dtbo.dts
+          dtc -q -I dtb -O dts -o $OUTPUT_DIR/overlay_dtbo/dtbo.dts $OUTPUT_DIR/overlay_dtbo/dtbo_raw
+          dtc -q -I dts -O dtb -o $OUTPUT_DIR/overlay_dtbo/dtbo.dtb $OUTPUT_DIR/overlay_dtbo/dtbo.dts
           mkdtboimg cfg_create $OUTPUT_DIR/overlay_dtbo/dtbo.img $OUTPUT_DIR/overlay_dtbo/dtbo.dtb
 
           # 校验结果
