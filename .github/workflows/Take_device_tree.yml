@@ -1,7 +1,5 @@
-# 工作流名称
 name: Extract Vendor_Boot & Build Device Tree For LineageOS
 
-# 触发规则：手动触发+文件更新自动触发
 on:
   workflow_dispatch:
   push:
@@ -9,12 +7,11 @@ on:
     paths:
       - 'Image/vendor_boot.img'
 
-# ========== 权限启用 ==========
 permissions:
-  contents: write        # 允许读写仓库内容、推送文件
-  pull-requests: write   # 兼容PR操作
-  id-token: write        # 身份令牌认证
-  actions: read          # 读取action运行状态
+  contents: write
+  pull-requests: write
+  id-token: write
+  actions: read
 
 jobs:
   extract-and-build-dtb:
@@ -24,89 +21,82 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # ========== 强制配置身份认证 ==========
           token: ${{ github.token }}
           persist-credentials: true
 
-      - name: Install all required dependencies & tools (修复Ubuntu24.04依赖)
+      - name: Install dependencies & PyPI版extract-dtb（核心修改）
         run: |
-          echo "🔧 开始安装编译和解包所需依赖..."
+          echo "🔧 安装系统依赖+PyPI工具..."
           sudo apt update -y && sudo apt upgrade -y
-          sudo apt install -y git wget curl unzip lzip tar gcc g++ make python3 python3-pip flex bison bc rsync
-          sudo apt install -y abootimg android-sdk-libsparse-utils
-          sudo apt install -y device-tree-compiler libfdt-dev
-          echo "✅ 所有依赖安装完成！"
-
-      - name: Download Android boot/unpack tools (无权限克隆问题，用压缩包下载)
-        run: |
-          echo "🔧 下载安卓镜像解包专用工具..."
-          wget --timeout=30 --tries=3 https://github.com/corsicanu/extract-dtb/archive/refs/heads/master.zip -O $HOME/extract-dtb.zip
-          unzip -q $HOME/extract-dtb.zip -d $HOME && mv $HOME/extract-dtb-master $HOME/extract-dtb
-          wget --timeout=30 --tries=3 https://github.com/osm0sis/mkbootimg/archive/refs/heads/master.zip -O $HOME/mkbootimg.zip
-          unzip -q $HOME/mkbootimg.zip -d $HOME && mv $HOME/mkbootimg-master $HOME/mkbootimg
+          # 系统基础依赖
+          sudo apt install -y git wget curl unzip lzip tar gcc g++ make flex bison bc rsync
+          sudo apt install -y abootimg android-sdk-libsparse-utils device-tree-compiler libfdt-dev
+          # 安装Python环境+PyPI版extract-dtb（官方推荐，稳定无404）
+          sudo apt install -y python3 python3-pip
+          pip3 install --upgrade pip
+          pip3 install extract-dtb  # 直接从PyPI安装，替代git下载
+          # 安装Magiskboot（解包vendor_boot核心工具）
           wget --timeout=30 --tries=3 https://github.com/topjohnwu/Magisk/releases/latest/download/magiskboot -O $HOME/magiskboot
-          chmod +x $HOME/magiskboot $HOME/extract-dtb/extract-dtb.py
-          echo "✅ 解包工具下载完成！"
-        timeout-minutes: 5
+          chmod +x $HOME/magiskboot
+          echo "✅ 所有依赖安装完成！"
 
       - name: Check vendor_boot.img & Create work directories
         run: |
-          echo "🔍 检查Image目录下的vendor_boot.img文件..."
+          echo "🔍 检查Image目录..."
           if [ ! -f "Image/vendor_boot.img" ]; then
-            echo "❌ ERROR: Image/vendor_boot.img 文件不存在！请确认文件路径正确"
+            echo "❌ ERROR: Image/vendor_boot.img不存在！"
             exit 1
           fi
           mkdir -p work/vendor_boot_unpack work/dts_source work/device_tree_out
-          echo "✅ 文件检查通过，工作目录创建完成！"
+          echo "✅ 文件检查通过！"
 
-      - name: Unpack vendor_boot.img completely (all partitions)
+      - name: Unpack vendor_boot.img + 提取dtb（用PyPI版extract-dtb）
         run: |
-          echo "⚙️ 开始解包 vendor_boot.img 镜像文件..."
+          echo "⚙️ 解包vendor_boot.img..."
           cd work/vendor_boot_unpack
           cp $GITHUB_WORKSPACE/Image/vendor_boot.img ./
+          # 用Magiskboot解包镜像
           $HOME/magiskboot unpack vendor_boot.img
-          $HOME/extract-dtb/extract-dtb.py vendor_boot.img -o $GITHUB_WORKSPACE/work/dts_source/
+          # 用PyPI版extract-dtb提取dtb（官方命令，更稳定）
+          extract-dtb -o $GITHUB_WORKSPACE/work/dts_source/ $GITHUB_WORKSPACE/Image/vendor_boot.img
+          # 验证提取结果
           if [ $(ls $GITHUB_WORKSPACE/work/dts_source/ | wc -l) -eq 0 ]; then
-            echo "❌ ERROR: 解包失败，未提取到任何dtb文件！"
+            echo "❌ ERROR: 未提取到dtb文件！"
             exit 1
           fi
-          echo "✅ vendor_boot.img 解包完成！已提取到dtb二进制文件"
+          echo "✅ 解包+提取dtb完成！"
 
-      - name: Decompile DTB to DTS & Build Complet Device Tree (LineageOS Ready)
+      - name: Decompile DTB to DTS & 构建设备树
         run: |
-          echo "⚙️ 开始反编译dtb文件为dts源码，并构建标准设备树..."
+          echo "⚙️ 反编译dtb→dts..."
           cd $GITHUB_WORKSPACE/work/dts_source
           for dtb_file in *.dtb; do
             echo "🔧 反编译: $dtb_file → ${dtb_file%.dtb}.dts"
             dtc -I dtb -O dts -o ${dtb_file%.dtb}.dts $dtb_file
           done
+          # 构建LineageOS兼容的设备树目录
           mkdir -p $GITHUB_WORKSPACE/device_tree
           cp -r $GITHUB_WORKSPACE/work/dts_source/* $GITHUB_WORKSPACE/device_tree/
           [ -d "$GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk" ] && cp -r $GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk $GITHUB_WORKSPACE/device_tree/
           [ -f "$GITHUB_WORKSPACE/work/vendor_boot_unpack/config" ] && cp $GITHUB_WORKSPACE/work/vendor_boot_unpack/config $GITHUB_WORKSPACE/device_tree/
-          echo "✅ 设备树构建完成！目录: device_tree/ （直接兼容LineageOS）"
+          echo "✅ 设备树构建完成！"
 
-      - name: Clean redundant files & Optimize device tree structure
+      - name: Clean冗余文件
         run: |
-          echo "🧹 清理冗余文件，优化设备树目录结构..."
-          rm -rf $GITHUB_WORKSPACE/work $HOME/*.zip $HOME/extract-dtb $HOME/mkbootimg $HOME/magiskboot
+          echo "🧹 清理临时文件..."
+          rm -rf $GITHUB_WORKSPACE/work $HOME/magiskboot
           find $GITHUB_WORKSPACE/device_tree -name "*.tmp" -delete
-          find $GITHUB_WORKSPACE/device_tree -name "*.bak" -delete
-          echo "✅ 清理完成，设备树目录纯净可用！"
+          echo "✅ 清理完成！"
 
-      - name: Commit & Push Device Tree (========== 完整身份声明 + 强制认证推送 ==========)
+      - name: Commit & Push设备树（身份认证）
         run: |
-          echo "📤 开始提交设备树文件到仓库..."
-          # ========== 解决「workflow不清楚你是谁」的核心身份声明 ==========
+          echo "📤 提交设备树..."
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global credential.helper store
           echo "https://github.com:${{ github.actor }}:${{ github.token }}" > ~/.git-credentials
           
-          # 提交文件
           git add device_tree/
-          git commit -m "build(device-tree): extract and build from vendor_boot.img ✅" -m "Source: Image/vendor_boot.img" || echo "ℹ️ 无新的设备树文件需要提交"
-          
-          # ========== 重点：强制使用认证令牌推送，彻底解决推送被拒 ==========
+          git commit -m "build(device-tree): 从vendor_boot.img提取设备树" || echo "ℹ️ 无新文件需提交"
           git push https://${{ github.token }}@github.com/${{ github.repository }}.git HEAD:${GITHUB_REF#refs/heads/} --force-with-lease
-          echo "✅ 设备树已成功推送到仓库！目录：device_tree/"
+          echo "✅ 设备树已推送至仓库！"
