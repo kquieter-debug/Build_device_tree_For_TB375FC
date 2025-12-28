@@ -24,25 +24,24 @@ jobs:
           token: ${{ github.token }}
           persist-credentials: true
 
-      - name: Install dependencies & PyPI版extract-dtb
+      - name: 精简安装依赖（修复pip冲突+加速）
         run: |
-          echo "🔧 安装系统依赖+PyPI工具..."
-          sudo apt update -y && sudo apt upgrade -y
-          sudo apt install -y git wget curl unzip lzip tar gcc g++ make flex bison bc rsync
-          sudo apt install -y abootimg android-sdk-libsparse-utils device-tree-compiler libfdt-dev
-          # 安装Python+extract-dtb
-          sudo apt install -y python3 python3-pip
-          sudo pip3 install --upgrade pip
+          echo "🔧 安装核心依赖..."
+          # 跳过apt upgrade（减少冗余步骤，避免系统更新耗时）
+          sudo apt update -y
+          # 合并依赖安装命令，仅装必需工具
+          sudo apt install -y git wget curl unzip lzip tar gcc g++ make flex bison bc rsync \
+            abootimg android-sdk-libsparse-utils device-tree-compiler libfdt-dev python3 python3-pip
+          # 关键修复：用系统pip直接安装extract-dtb，不升级pip（避免卸载冲突）
           sudo pip3 install extract-dtb
           echo "✅ 依赖安装完成！"
 
-      - name: 下载你提供的Magiskboot（x86_64版，适配GitHub Actions环境）
+      - name: 下载Magiskboot（x86_64架构适配）
         run: |
           echo "🔧 从magoohnji/magiskboot-linux下载工具..."
-          # 直接下载x86_64版本（GitHub Actions是x86_64架构）
           wget --timeout=30 --tries=3 https://raw.githubusercontent.com/magoohnji/magiskboot-linux/main/x86_64/magiskboot -O $HOME/magiskboot
           chmod +x $HOME/magiskboot
-          # 验证下载结果
+          # 验证工具可用性
           if [ ! -f "$HOME/magiskboot" ]; then
             echo "❌ ERROR: Magiskboot下载失败！"
             exit 1
@@ -65,7 +64,7 @@ jobs:
           cd work/vendor_boot_unpack
           cp $GITHUB_WORKSPACE/Image/vendor_boot.img ./
           $HOME/magiskboot unpack vendor_boot.img
-          # 提取dtb
+          # 提取dtb（用系统pip安装的extract-dtb）
           extract-dtb -o $GITHUB_WORKSPACE/work/dts_source/ $GITHUB_WORKSPACE/Image/vendor_boot.img
           if [ $(ls $GITHUB_WORKSPACE/work/dts_source/ | wc -l) -eq 0 ]; then
             echo "❌ ERROR: 未提取到dtb文件！"
