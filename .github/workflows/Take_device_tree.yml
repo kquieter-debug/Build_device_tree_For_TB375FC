@@ -24,23 +24,32 @@ jobs:
           token: ${{ github.token }}
           persist-credentials: true
 
-      - name: Install dependencies & PyPI版extract-dtb（核心修改）
+      - name: Install dependencies & PyPI版extract-dtb
         run: |
           echo "🔧 安装系统依赖+PyPI工具..."
           sudo apt update -y && sudo apt upgrade -y
-          # 系统基础依赖
           sudo apt install -y git wget curl unzip lzip tar gcc g++ make flex bison bc rsync
           sudo apt install -y abootimg android-sdk-libsparse-utils device-tree-compiler libfdt-dev
-          # 安装Python环境+PyPI版extract-dtb（官方推荐，稳定无404）
+          # 安装Python+extract-dtb
           sudo apt install -y python3 python3-pip
-          pip3 install --upgrade pip
-          pip3 install extract-dtb  # 直接从PyPI安装，替代git下载
-          # 安装Magiskboot（解包vendor_boot核心工具）
-          wget --timeout=30 --tries=3 https://github.com/topjohnwu/Magisk/releases/latest/download/magiskboot -O $HOME/magiskboot
-          chmod +x $HOME/magiskboot
-          echo "✅ 所有依赖安装完成！"
+          sudo pip3 install --upgrade pip
+          sudo pip3 install extract-dtb
+          echo "✅ 依赖安装完成！"
 
-      - name: Check vendor_boot.img & Create work directories
+      - name: 下载你提供的Magiskboot（x86_64版，适配GitHub Actions环境）
+        run: |
+          echo "🔧 从magoohnji/magiskboot-linux下载工具..."
+          # 直接下载x86_64版本（GitHub Actions是x86_64架构）
+          wget --timeout=30 --tries=3 https://raw.githubusercontent.com/magoohnji/magiskboot-linux/main/x86_64/magiskboot -O $HOME/magiskboot
+          chmod +x $HOME/magiskboot
+          # 验证下载结果
+          if [ ! -f "$HOME/magiskboot" ]; then
+            echo "❌ ERROR: Magiskboot下载失败！"
+            exit 1
+          fi
+          echo "✅ Magiskboot下载完成！"
+
+      - name: Check vendor_boot.img & 创建工作目录
         run: |
           echo "🔍 检查Image目录..."
           if [ ! -f "Image/vendor_boot.img" ]; then
@@ -50,16 +59,14 @@ jobs:
           mkdir -p work/vendor_boot_unpack work/dts_source work/device_tree_out
           echo "✅ 文件检查通过！"
 
-      - name: Unpack vendor_boot.img + 提取dtb（用PyPI版extract-dtb）
+      - name: Unpack vendor_boot.img + 提取dtb
         run: |
           echo "⚙️ 解包vendor_boot.img..."
           cd work/vendor_boot_unpack
           cp $GITHUB_WORKSPACE/Image/vendor_boot.img ./
-          # 用Magiskboot解包镜像
           $HOME/magiskboot unpack vendor_boot.img
-          # 用PyPI版extract-dtb提取dtb（官方命令，更稳定）
+          # 提取dtb
           extract-dtb -o $GITHUB_WORKSPACE/work/dts_source/ $GITHUB_WORKSPACE/Image/vendor_boot.img
-          # 验证提取结果
           if [ $(ls $GITHUB_WORKSPACE/work/dts_source/ | wc -l) -eq 0 ]; then
             echo "❌ ERROR: 未提取到dtb文件！"
             exit 1
@@ -71,10 +78,8 @@ jobs:
           echo "⚙️ 反编译dtb→dts..."
           cd $GITHUB_WORKSPACE/work/dts_source
           for dtb_file in *.dtb; do
-            echo "🔧 反编译: $dtb_file → ${dtb_file%.dtb}.dts"
             dtc -I dtb -O dts -o ${dtb_file%.dtb}.dts $dtb_file
           done
-          # 构建LineageOS兼容的设备树目录
           mkdir -p $GITHUB_WORKSPACE/device_tree
           cp -r $GITHUB_WORKSPACE/work/dts_source/* $GITHUB_WORKSPACE/device_tree/
           [ -d "$GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk" ] && cp -r $GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk $GITHUB_WORKSPACE/device_tree/
@@ -83,14 +88,12 @@ jobs:
 
       - name: Clean冗余文件
         run: |
-          echo "🧹 清理临时文件..."
           rm -rf $GITHUB_WORKSPACE/work $HOME/magiskboot
           find $GITHUB_WORKSPACE/device_tree -name "*.tmp" -delete
           echo "✅ 清理完成！"
 
-      - name: Commit & Push设备树（身份认证）
+      - name: Commit & Push设备树
         run: |
-          echo "📤 提交设备树..."
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global credential.helper store
@@ -99,4 +102,4 @@ jobs:
           git add device_tree/
           git commit -m "build(device-tree): 从vendor_boot.img提取设备树" || echo "ℹ️ 无新文件需提交"
           git push https://${{ github.token }}@github.com/${{ github.repository }}.git HEAD:${GITHUB_REF#refs/heads/} --force-with-lease
-          echo "✅ 设备树已推送至仓库！"
+          echo "✅ 设备树已推送！"
