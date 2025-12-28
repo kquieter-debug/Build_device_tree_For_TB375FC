@@ -1,0 +1,128 @@
+# 工作流名称，可自定义
+name: Extract Vendor_Boot & Build Device Tree For LineageOS
+
+# 触发规则：两种方式可选，按需启用/注释
+on:
+  # 方式1：手动在GitHub Actions页面点击「Run workflow」触发，推荐！
+  workflow_dispatch:
+  # 方式2：当Image文件夹中的vendor_boot.img更新时自动触发（提交Image/目录文件则运行）
+  push:
+    paths:
+      - 'Image/vendor_boot.img'
+
+# 权限配置：必须给够，用于提交和推送设备树到当前仓库
+permissions:
+  contents: write
+
+# 运行的虚拟机环境
+jobs:
+  extract-and-build-dtb:
+    runs-on: ubuntu-latest
+    steps:
+      # ===================== 步骤1：拉取当前仓库所有代码到运行环境 =====================
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 拉取完整仓库历史，避免提交冲突
+
+      # ===================== 步骤2：安装所有必需依赖工具 =====================
+      - name: Install all required dependencies & tools
+        run: |
+          echo "🔧 开始安装编译和解包所需依赖..."
+          sudo apt update -y && sudo apt upgrade -y
+          # 基础依赖：解包/编译必备
+          sudo apt install -y git wget curl unzip lzip tar gcc g++ make python3 python3-pip flex bison bc rsync
+          # Android解包专用工具
+          sudo apt install -y abootimg android-tools-fsutils simg2img img2simg
+          # 设备树编译核心工具: dtc (Device Tree Compiler) + libfdt
+          sudo apt install -y device-tree-compiler libfdt-dev
+          echo "✅ 所有依赖安装完成！"
+
+      # ===================== 步骤3：下载安卓专用解包工具包（vendor_boot专用） =====================
+      - name: Download Android boot/unpack tools (critical for vendor_boot.img)
+        run: |
+          echo "🔧 下载安卓镜像解包专用工具..."
+          # 下载万能boot解包工具（兼容vendor_boot/boot/init_boot）
+          git clone https://github.com/corsicanu/extract-dtb.git $HOME/extract-dtb
+          git clone https://github.com/osm0sis/mkbootimg.git $HOME/mkbootimg
+          # 下载magiskboot（最强安卓镜像解包工具，必装，处理vendor_boot核心）
+          wget https://github.com/topjohnwu/Magisk/releases/latest/download/magiskboot -O $HOME/magiskboot
+          chmod +x $HOME/magiskboot $HOME/extract-dtb/extract-dtb.py
+          echo "✅ 解包工具下载完成！"
+
+      # ===================== 步骤4：检查vendor_boot.img是否存在，创建工作目录 =====================
+      - name: Check vendor_boot.img & Create work directories
+        run: |
+          echo "🔍 检查Image目录下的vendor_boot.img文件..."
+          # 检查核心文件是否存在，不存在则直接终止工作流
+          if [ ! -f "Image/vendor_boot.img" ]; then
+            echo "❌ ERROR: Image/vendor_boot.img 文件不存在！请确认文件路径正确"
+            exit 1
+          fi
+          # 创建工作目录，分类存放解包文件/设备树源文件/编译后的设备树
+          mkdir -p work/vendor_boot_unpack work/dts_source work/device_tree_out
+          echo "✅ 文件检查通过，工作目录创建完成！"
+
+      # ===================== 步骤5：核心步骤 - 完整解包vendor_boot.img镜像 =====================
+      - name: Unpack vendor_boot.img completely (all partitions)
+        run: |
+          echo "⚙️ 开始解包 vendor_boot.img 镜像文件..."
+          cd work/vendor_boot_unpack
+          # 复制仓库的vendor_boot.img到工作目录
+          cp $GITHUB_WORKSPACE/Image/vendor_boot.img ./
+          # 第一步：用magiskboot解包vendor_boot.img（核心，解出内核/ramdisk/dtb/dtbo等所有分区）
+          $HOME/magiskboot unpack vendor_boot.img
+          # 第二步：提取所有dtb设备树二进制文件到dts_source目录
+          $HOME/extract-dtb/extract-dtb.py vendor_boot.img -o $GITHUB_WORKSPACE/work/dts_source/
+          # 验证解包结果
+          if [ $(ls $GITHUB_WORKSPACE/work/dts_source/ | wc -l) -eq 0 ]; then
+            echo "❌ ERROR: 解包失败，未提取到任何dtb文件！"
+            exit 1
+          fi
+          echo "✅ vendor_boot.img 解包完成！已提取到dtb二进制文件"
+
+      # ===================== 步骤6：核心步骤 - 反编译dtb为dts源码 + 编译构建完整设备树 =====================
+      - name: Decompile DTB to DTS & Build Complet Device Tree (LineageOS Ready)
+        run: |
+          echo "⚙️ 开始反编译dtb文件为dts源码，并构建标准设备树..."
+          cd $GITHUB_WORKSPACE/work/dts_source
+          # 遍历所有解包的dtb文件，反编译为可读的dts设备树源码（安卓编译必须）
+          for dtb_file in *.dtb; do
+            echo "🔧 反编译: $dtb_file → ${dtb_file%.dtb}.dts"
+            dtc -I dtb -O dts -o ${dtb_file%.dtb}.dts $dtb_file
+          done
+          # 编译构建标准设备树目录结构，适配LineageOS编译规范
+          echo "🔧 构建LineageOS兼容的设备树目录..."
+          mkdir -p $GITHUB_WORKSPACE/device_tree
+          # 复制所有dts/dtb核心文件到设备树根目录
+          cp -r $GITHUB_WORKSPACE/work/dts_source/* $GITHUB_WORKSPACE/device_tree/
+          # 复制解包的ramdisk/内核配置等辅助文件（LineageOS编译需要）
+          cp -r $GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk $GITHUB_WORKSPACE/device_tree/
+          cp -r $GITHUB_WORKSPACE/work/vendor_boot_unpack/config $GITHUB_WORKSPACE/device_tree/
+          echo "✅ 设备树构建完成！目录: device_tree/ （直接兼容LineageOS）"
+
+      # ===================== 步骤7：清理冗余文件，优化设备树目录 =====================
+      - name: Clean redundant files & Optimize device tree structure
+        run: |
+          echo "🧹 清理冗余文件，优化设备树目录结构..."
+          # 删除工作目录（临时文件，无需提交）
+          rm -rf $GITHUB_WORKSPACE/work
+          # 删除设备树中无用的临时文件，只保留编译必需文件
+          find $GITHUB_WORKSPACE/device_tree -name "*.tmp" -delete
+          find $GITHUB_WORKSPACE/device_tree -name "*.bak" -delete
+          echo "✅ 清理完成，设备树目录纯净可用！"
+
+      # ===================== 步骤8：自动提交构建好的设备树到当前仓库 =====================
+      - name: Commit & Push Device Tree to Current Repository
+        run: |
+          echo "📤 开始提交设备树文件到仓库..."
+          # 配置git用户信息（GitHub Actions专用）
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # 添建设备树目录到git
+          git add device_tree/
+          # 提交信息，可自定义
+          git commit -m "build(device-tree): extract and build from vendor_boot.img ✅" -m "Source: Image/vendor_boot.img" || echo "ℹ️ 无新的设备树文件需要提交"
+          # 推送到当前仓库的主分支（如需推送到其他分支，修改main为你的分支名）
+          git push origin main
+          echo "✅ 设备树已成功推送到仓库！目录：device_tree/"
