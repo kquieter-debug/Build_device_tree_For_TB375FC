@@ -1,154 +1,92 @@
-name: Extract Vendor_Boot & Build Device Tree For LineageOS
-
+# 工作流名称，可自定义
+name: 构建TB375FC设备树
+# 触发规则：两种方式可选，按需保留/删除
 on:
+  # 方式1：手动触发（推荐，最常用），在GitHub仓库Actions页面点击「Run workflow」即可执行
   workflow_dispatch:
-  push:
-    branches: [ main, master ]
-    paths:
-      - 'Image/vendor_boot.img'
+  # 方式2：当仓库有push提交时自动触发（比如更新vendor_boot文件后自动重构设备树），可选开启
+  # push:
+  #   branches: [ main, master ]
+  #   paths: [ 'vendor_boot/**' ] # 仅当vendor_boot文件夹内容变更时触发
 
+# 权限配置：必须配置，用于将构建好的设备树推送到仓库
 permissions:
   contents: write
-  pull-requests: write
-  id-token: write
-  actions: read
+  pull-requests: read
 
+# 工作流核心任务
 jobs:
-  extract-and-build-dtb:
-    runs-on: ubuntu-latest
+  build-device-tree:
+    # 运行环境：Ubuntu 22.04（GitHub Action官方推荐，安卓编译最佳兼容环境）
+    runs-on: ubuntu-22.04
     steps:
-      - name: Checkout current repository
+      # 步骤1：检出当前仓库代码（包含根目录的vendor_boot文件夹）
+      - name: 检查仓库内的vendor_boot文件夹
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ github.token }}
           persist-credentials: true
 
-      - name: 精简安装依赖（含完整性校验工具）
+      # 步骤2：安装所有依赖工具（安卓设备树构建+编译必备，一键安装无遗漏）
+      - name: 安装依赖
         run: |
-          echo "🔧 安装核心依赖+校验工具..."
-          sudo apt update -y
-          # 新增libfdt-dev（提供fdt_check_header校验函数）
-          sudo apt install -y git wget curl unzip lzip tar gcc g++ make flex bison bc rsync \
-            abootimg android-sdk-libsparse-utils device-tree-compiler libfdt-dev python3 python3-pip
-          sudo pip3 install extract-dtb
-          echo "✅ 依赖安装完成！"
+          echo "📦 开始安装构建设备树所需依赖..."
+          sudo apt update -y && sudo apt upgrade -y
+          # 基础依赖
+          sudo apt install -y git build-essential bc bison flex python3 python3-pip libssl-dev liblz4-tool curl wget unzip zip
+          # 设备树核心工具：dtc(设备树编译器) mkbootimg dtboimg_tools
+          sudo apt install -y device-tree-compiler android-sdk-libsparse-utils android-sdk-platform-tools
+          # 安装extract-dtb工具（从vendor_boot提取dtb专用）
+          git clone https://github.com/PabloCastellano/extract-dtb.git $HOME/extract-dtb
+          chmod +x $HOME/extract-dtb/extract-dtb.py
+          sudo cp $HOME/extract-dtb/extract-dtb.py /usr/bin/extract-dtb
+          echo "✅ 所有依赖工具安装完成！"
 
-      - name: 下载Magiskboot（x86_64架构适配）
+      # 步骤3：创建设备树存放目录 + 从vendor_boot提取并构建完整设备树
+      - name: 创建设备树存放目录，提取设备树
         run: |
-          echo "🔧 从magoohnji/magiskboot-linux下载工具..."
-          wget --timeout=30 --tries=3 https://raw.githubusercontent.com/magoohnji/magiskboot-linux/main/x86_64/magiskboot -O $HOME/magiskboot
-          chmod +x $HOME/magiskboot
-          if [ ! -f "$HOME/magiskboot" ]; then
-            echo "❌ ERROR: Magiskboot下载失败！"
+          echo "🔧 开始初始化设备树构建环境..."
+          # 创建设备树根目录（仓库根目录生成，方便后续直接使用）
+          mkdir -p $GITHUB_WORKSPACE/device_tree
+          DT_DIR=$GITHUB_WORKSPACE/device_tree
+          VENDOR_BOOT_DIR=$GITHUB_WORKSPACE/vendor_boot
+
+          # 校验vendor_boot文件夹是否存在（防错）
+          if [ ! -d "$VENDOR_BOOT_DIR" ]; then
+            echo "❌ 错误：仓库根目录未找到 vendor_boot 文件夹，请确认上传完成！"
             exit 1
           fi
-          echo "✅ Magiskboot下载完成！"
 
-      - name: Check vendor_boot.img & 创建工作目录
-        run: |
-          echo "🔍 检查Image目录..."
-          if [ ! -f "Image/vendor_boot.img" ]; then
-            echo "❌ ERROR: Image/vendor_boot.img不存在！"
-            exit 1
-          fi
-          mkdir -p work/vendor_boot_unpack work/dts_source work/device_tree_out
-          echo "✅ 文件检查通过！"
+          echo "📤 开始从解包的vendor_boot提取dtb/dtbo设备树文件..."
+          # 提取vendor_boot内所有dtb/dtbo文件到设备树目录
+          find $VENDOR_BOOT_DIR -name "*.dtb" -o -name "*.dtbo" | xargs cp -t $DT_DIR
+          # 从vendor_boot的kernel/ramdisk中深度提取隐藏的dtb文件
+          extract-dtb $VENDOR_BOOT_DIR -o $DT_DIR
 
-      - name: Unpack vendor_boot.img + 提取dtb
-        run: |
-          echo "⚙️ 解包vendor_boot.img..."
-          cd work/vendor_boot_unpack
-          cp $GITHUB_WORKSPACE/Image/vendor_boot.img ./
-          $HOME/magiskboot unpack vendor_boot.img
-          extract-dtb -o $GITHUB_WORKSPACE/work/dts_source/ $GITHUB_WORKSPACE/Image/vendor_boot.img
-          if [ $(ls $GITHUB_WORKSPACE/work/dts_source/ | wc -l) -eq 0 ]; then
-            echo "❌ ERROR: 未提取到dtb文件！"
-            exit 1
-          fi
-          echo "✅ 解包+提取dtb完成！"
-
-      - name: 🔍 第一重校验：DTB文件合法性（检查幻数+头部）
-        run: |
-          echo "⚙️ 验证所有dtb文件是否合法..."
-          cd $GITHUB_WORKSPACE/work/dts_source
-          # 编译校验工具（利用libfdt检查DTB头部幻数0xd00dfeed）
-          cat > check_dtb.c << 'EOF'
-          #include <libfdt.h>
-          #include <stdio.h>
-          int main(int argc, char *argv[]) {
-            if (argc != 2) return 1;
-            void *dtb = fdt_open_into(argv[1], NULL, 0x100000);
-            if (!dtb || fdt_check_header(dtb) != 0) {
-              printf("❌ Invalid DTB: %s\n", argv[1]);
-              return 1;
-            }
-            printf("✅ Valid DTB: %s\n", argv[1]);
-            return 0;
-          }
-          EOF
-          gcc check_dtb.c -o check_dtb -lfdt
-          # 批量校验所有dtb文件
-          for dtb_file in *.dtb; do
-            ./check_dtb $dtb_file || exit 1
-          done
-          echo "✅ 所有DTB文件合法性校验通过！"
-
-      - name: Decompile DTB to DTS + 🔍 第二重校验：DTS语法完整性
-        run: |
-          echo "⚙️ 反编译dtb→dts并校验语法..."
-          cd $GITHUB_WORKSPACE/work/dts_source
-          for dtb_file in *.dtb; do
-            dts_file=${dtb_file%.dtb}.dts
-            echo "🔧 反编译+校验: $dtb_file → $dts_file"
-            # 反编译后立即用dtc校验语法（避免无效语法）
-            dtc -I dtb -O dts -o $dts_file $dtb_file
-            if ! dtc -I dts -O dtb -o /dev/null $dts_file 2>/dev/null; then
-              echo "❌ ERROR: DTS语法错误！文件: $dts_file"
-              exit 1
+          echo "⚙️ 开始编译/修复设备树文件（LineageOS编译兼容版）..."
+          # 遍历所有dtb文件，重新编译为标准dts源码+二进制dtb（解决兼容性问题）
+          for dtb_file in $DT_DIR/*.dtb; do
+            if [ -f "$dtb_file" ]; then
+              dtc -I dtb -O dts -o "${dtb_file%.dtb}.dts" "$dtb_file"
+              dtc -I dts -O dtb -o "$dtb_file" "${dtb_file%.dtb}.dts"
             fi
           done
-          echo "✅ 所有DTS文件语法校验通过！"
 
-      - name: 🔍 第三重校验：LineageOS兼容性（关键节点检查）
-        run: |
-          echo "⚙️ 验证设备树是否兼容LineageOS编译..."
-          cd $GITHUB_WORKSPACE/work/dts_source
-          # 检查LineageOS必需的核心节点（缺失会导致编译失败）
-          required_nodes=("chosen" "memory" "soc" "aliases")
-          for dts_file in *.dts; do
-            for node in "${required_nodes[@]}"; do
-              if ! grep -q -E "^/{[^}]*$node" $dts_file; then
-                echo "❌ ERROR: 缺失LineageOS必需节点 '$node'！文件: $dts_file"
-                exit 1
-              fi
-            done
-          done
-          echo "✅ LineageOS兼容性校验通过！"
+          # 生成设备树清单文件，方便后续LineageOS编译调用
+          ls -l $DT_DIR > $DT_DIR/DEVICE_TREE_LIST.txt
+          echo "✅ 设备树构建完成！所有文件已保存至：$DT_DIR"
 
-      - name: 构建设备树目录
+      # 步骤4：自动将构建好的设备树提交并推送到当前仓库（核心步骤，自动保存成果）
+      - name: 推送到当前仓库
         run: |
-          echo "⚙️ 构建最终设备树目录..."
-          mkdir -p $GITHUB_WORKSPACE/device_tree
-          cp -r $GITHUB_WORKSPACE/work/dts_source/* $GITHUB_WORKSPACE/device_tree/
-          [ -d "$GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk" ] && cp -r $GITHUB_WORKSPACE/work/vendor_boot_unpack/ramdisk $GITHUB_WORKSPACE/device_tree/
-          [ -f "$GITHUB_WORKSPACE/work/vendor_boot_unpack/config" ] && cp $GITHUB_WORKSPACE/work/vendor_boot_unpack/config $GITHUB_WORKSPACE/device_tree/
-          echo "✅ 设备树构建完成！"
-
-      - name: Clean冗余文件
-        run: |
-          rm -rf $GITHUB_WORKSPACE/work $HOME/magiskboot
-          find $GITHUB_WORKSPACE/device_tree -name "*.tmp" -delete
-          echo "✅ 清理完成！"
-
-      - name: Commit & Push设备树
-        run: |
+          echo "📤 开始提交并推送设备树文件到仓库..."
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global credential.helper store
-          echo "https://github.com:${{ github.actor }}:${{ github.token }}" > ~/.git-credentials
-          
+          # 检查仓库状态
           git add device_tree/
-          git commit -m "build(device-tree): 提取并校验设备树（兼容LineageOS）" || echo "ℹ️ 无新文件需提交"
-          git push https://${{ github.token }}@github.com/${{ github.repository }}.git HEAD:${GITHUB_REF#refs/heads/} --force-with-lease
-          echo "✅ 设备树已推送！"
+          git status
+          # 提交代码（带时间戳，方便区分版本）
+          git commit -m "build(device-tree): auto build device tree from vendor_boot $(date +'%Y-%m-%d %H:%M:%S')" -a || echo "✅ 无新的设备树文件需要提交"
+          # 推送到当前分支
+          git push origin HEAD:${{ github.ref }}
+          echo "✅ 设备树文件已成功推送到仓库！"

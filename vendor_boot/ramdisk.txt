@@ -1,0 +1,9566 @@
+[acct]
+c_ino = 300000
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[apex]
+c_ino = 300001
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[bin]
+c_ino = 300002
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+[bugreports]
+c_ino = 300003
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+[config]
+c_ino = 300004
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o555"
+
+[d]
+c_ino = 300005
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+[data]
+c_ino = 300006
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o771"
+
+[data_mirror]
+c_ino = 300007
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[debug_ramdisk]
+c_ino = 300008
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["default.prop"]
+c_ino = 300009
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o600"
+
+[dev]
+c_ino = 300010
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[etc]
+c_ino = 300011
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+[first_stage_ramdisk]
+c_ino = 300012
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["first_stage_ramdisk/fstab.mt6897"]
+c_ino = 300013
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/fstab.mt8792"]
+c_ino = 300014
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system"]
+c_ino = 300015
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["first_stage_ramdisk/system/bin"]
+c_ino = 300016
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["first_stage_ramdisk/system/bin/defrag.f2fs"]
+c_ino = 300017
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/bin/dump.f2fs"]
+c_ino = 300018
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/bin/e2fsck"]
+c_ino = 300019
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["first_stage_ramdisk/system/bin/fsck.f2fs"]
+c_ino = 300020
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["first_stage_ramdisk/system/bin/linker64"]
+c_ino = 300021
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["first_stage_ramdisk/system/bin/linker_asan64"]
+c_ino = 300022
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/bin/linker_hwasan64"]
+c_ino = 300023
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/bin/resize.f2fs"]
+c_ino = 300024
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/bin/snapuserd"]
+c_ino = 300025
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["first_stage_ramdisk/system/lib64"]
+c_ino = 300026
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["first_stage_ramdisk/system/lib64/ld-android.so"]
+c_ino = 300027
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libbase.so"]
+c_ino = 300028
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libc++.so"]
+c_ino = 300029
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libc.so"]
+c_ino = 300030
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libdl.so"]
+c_ino = 300031
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libext2_blkid.so"]
+c_ino = 300032
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libext2_com_err.so"]
+c_ino = 300033
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libext2_e2p.so"]
+c_ino = 300034
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libext2_quota.so"]
+c_ino = 300035
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libext2_uuid.so"]
+c_ino = 300036
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libext2fs.so"]
+c_ino = 300037
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/liblog.so"]
+c_ino = 300038
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libm.so"]
+c_ino = 300039
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libsparse.so"]
+c_ino = 300040
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["first_stage_ramdisk/system/lib64/libz.so"]
+c_ino = 300041
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[init]
+c_ino = 300042
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o750"
+
+[lenovocust]
+c_ino = 300043
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[lib]
+c_ino = 300044
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["lib/modules"]
+c_ino = 300045
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["lib/modules/8250_mtk.ko"]
+c_ino = 300046
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/adapter_class.ko"]
+c_ino = 300047
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/adsp.ko"]
+c_ino = 300048
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/aee_aed.ko"]
+c_ino = 300049
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/aee_hangdet.ko"]
+c_ino = 300050
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/aee_rs.ko"]
+c_ino = 300051
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/arm_dsu_pmu.ko"]
+c_ino = 300052
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/blocktag.ko"]
+c_ino = 300053
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/bootprof.ko"]
+c_ino = 300054
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/bus-parity.ko"]
+c_ino = 300055
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/cache-parity.ko"]
+c_ino = 300056
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/charger_class.ko"]
+c_ino = 300057
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-bringup.ko"]
+c_ino = 300058
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-chk-mt6897.ko"]
+c_ino = 300059
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-common.ko"]
+c_ino = 300060
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-dbg-mt6897.ko"]
+c_ino = 300061
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-disable-unused.ko"]
+c_ino = 300062
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-fmeter-mt6897.ko"]
+c_ino = 300063
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-adsp.ko"]
+c_ino = 300064
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-bus.ko"]
+c_ino = 300065
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-cam.ko"]
+c_ino = 300066
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-ccu.ko"]
+c_ino = 300067
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-img.ko"]
+c_ino = 300068
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-mdpsys.ko"]
+c_ino = 300069
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-mmsys.ko"]
+c_ino = 300070
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-peri.ko"]
+c_ino = 300071
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-vcodec.ko"]
+c_ino = 300072
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897-vlp.ko"]
+c_ino = 300073
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clk-mt6897.ko"]
+c_ino = 300074
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/clkbuf.ko"]
+c_ino = 300075
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/cmdq-platform-mt6897.ko"]
+c_ino = 300076
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/cmdq_helper_inf.ko"]
+c_ino = 300077
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/cqhci.ko"]
+c_ino = 300078
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/dbg_error_flag.ko"]
+c_ino = 300079
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/dbgtop-drm.ko"]
+c_ino = 300080
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/device-apc-common.ko"]
+c_ino = 300081
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/device-apc-mt6897.ko"]
+c_ino = 300082
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/drm_display_helper.ko"]
+c_ino = 300083
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/drm_dma_helper.ko"]
+c_ino = 300084
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/emi-mpu.ko"]
+c_ino = 300085
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/emi-slb.ko"]
+c_ino = 300086
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/emi.ko"]
+c_ino = 300087
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/extcon-mtk-usb.ko"]
+c_ino = 300088
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/extdev_io_class.ko"]
+c_ino = 300089
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/ffa-module.ko"]
+c_ino = 300090
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/fsa4480-i2c.ko"]
+c_ino = 300091
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/gf_tee.ko"]
+c_ino = 300092
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/hall.ko"]
+c_ino = 300093
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/hardware_info.ko"]
+c_ino = 300094
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/hx9031as.ko"]
+c_ino = 300095
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/hx9036.ko"]
+c_ino = 300096
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/i2c-mt65xx.ko"]
+c_ino = 300097
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/industrialio-triggered-buffer.ko"]
+c_ino = 300098
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/iommu_debug.ko"]
+c_ino = 300099
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/iommu_secure.ko"]
+c_ino = 300100
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/irq-dbg.ko"]
+c_ino = 300101
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/isee-ffa.ko"]
+c_ino = 300102
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/kfifo_buf.ko"]
+c_ino = 300103
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/last_bus.ko"]
+c_ino = 300104
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/leds-mtk-disp.ko"]
+c_ino = 300105
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/leds-mtk-pwm.ko"]
+c_ino = 300106
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/leds-mtk.ko"]
+c_ino = 300107
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/lenovo_charge_sysfs.ko"]
+c_ino = 300108
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/log_store.ko"]
+c_ino = 300109
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mcDrvModule-ffa.ko"]
+c_ino = 300110
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mcupm.ko"]
+c_ino = 300111
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mdp_drv_mt6897.ko"]
+c_ino = 300112
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mediatek-cpufreq-hw.ko"]
+c_ino = 300113
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mediatek-drm-gateic.ko"]
+c_ino = 300114
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mediatek-drm-panel-drv.ko"]
+c_ino = 300115
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mediatek-drm.ko"]
+c_ino = 300116
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mkp.ko"]
+c_ino = 300117
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mm8013a_gauge.ko"]
+c_ino = 300118
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mmprofile.ko"]
+c_ino = 300119
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mmqos-common.ko"]
+c_ino = 300120
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mmqos-mt6897.ko"]
+c_ino = 300121
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/modules.alias"]
+c_ino = 300122
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/modules.dep"]
+c_ino = 300123
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/modules.load"]
+c_ino = 300124
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/modules.load.recovery"]
+c_ino = 300125
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/modules.softdep"]
+c_ino = 300126
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/monitor_hang.ko"]
+c_ino = 300127
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mrdump.ko"]
+c_ino = 300128
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6315-regulator.ko"]
+c_ino = 300129
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6338-core.ko"]
+c_ino = 300130
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6363-regulator.ko"]
+c_ino = 300131
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6368-regulator.ko"]
+c_ino = 300132
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6375-adc.ko"]
+c_ino = 300133
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6375-auxadc.ko"]
+c_ino = 300134
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6375-battery.ko"]
+c_ino = 300135
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6375-charger.ko"]
+c_ino = 300136
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6375.ko"]
+c_ino = 300137
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6685-audclk.ko"]
+c_ino = 300138
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6685-core.ko"]
+c_ino = 300139
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mt6897_dcm.ko"]
+c_ino = 300140
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-afe-external.ko"]
+c_ino = 300141
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-cmdq-drv-ext.ko"]
+c_ino = 300142
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-dvfsrc-devfreq.ko"]
+c_ino = 300143
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-dvfsrc-helper.ko"]
+c_ino = 300144
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-dvfsrc-regulator.ko"]
+c_ino = 300145
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-dvfsrc.ko"]
+c_ino = 300146
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-emi.ko"]
+c_ino = 300147
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-icc-core.ko"]
+c_ino = 300148
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-kpd.ko"]
+c_ino = 300149
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mbox-mailbox.ko"]
+c_ino = 300150
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mbox.ko"]
+c_ino = 300151
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mmc-dbg.ko"]
+c_ino = 300152
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mmc.ko"]
+c_ino = 300153
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mmdvfs-debug.ko"]
+c_ino = 300154
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mmdvfs-ftrace.ko"]
+c_ino = 300155
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mmdvfs-v3-start.ko"]
+c_ino = 300156
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mmdvfs-v3.ko"]
+c_ino = 300157
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mmdvfs.ko"]
+c_ino = 300158
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mminfra-debug.ko"]
+c_ino = 300159
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mminfra-imax.ko"]
+c_ino = 300160
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mml-mt6897.ko"]
+c_ino = 300161
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-mml.ko"]
+c_ino = 300162
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-pm-domain-disable-unused.ko"]
+c_ino = 300163
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-pmic-keys.ko"]
+c_ino = 300164
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-pmic-wrap.ko"]
+c_ino = 300165
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-scpsys-bringup.ko"]
+c_ino = 300166
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-scpsys-mt6897.ko"]
+c_ino = 300167
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-scpsys.ko"]
+c_ino = 300168
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-smi-dbg.ko"]
+c_ino = 300169
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-smi.ko"]
+c_ino = 300170
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-socinfo.ko"]
+c_ino = 300171
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-spmi-pmic-adc.ko"]
+c_ino = 300172
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-spmi-pmic.ko"]
+c_ino = 300173
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-swpm-perf-arm-pmu.ko"]
+c_ino = 300174
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-uart-apdma.ko"]
+c_ino = 300175
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk-vmm-spm.ko"]
+c_ino = 300176
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_battery_oc_throttling.ko"]
+c_ino = 300177
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_charger_algorithm_class.ko"]
+c_ino = 300178
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_charger_framework.ko"]
+c_ino = 300179
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_chg_type_det.ko"]
+c_ino = 300180
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_dcm.ko"]
+c_ino = 300181
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_disp_notify.ko"]
+c_ino = 300182
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_dramc.ko"]
+c_ino = 300183
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_dynamic_loading_throttling.ko"]
+c_ino = 300184
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_iommu.ko"]
+c_ino = 300185
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_low_battery_throttling.ko"]
+c_ino = 300186
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_mdpm.ko"]
+c_ino = 300187
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_panel_ext.ko"]
+c_ino = 300188
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_pbm.ko"]
+c_ino = 300189
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_pd_adapter.ko"]
+c_ino = 300190
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_pd_charging.ko"]
+c_ino = 300191
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_pep.ko"]
+c_ino = 300192
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_pep20.ko"]
+c_ino = 300193
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_pep40.ko"]
+c_ino = 300194
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_pep45.ko"]
+c_ino = 300195
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_pep50.ko"]
+c_ino = 300196
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_printk_ctrl.ko"]
+c_ino = 300197
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_rpmsg_mbox.ko"]
+c_ino = 300198
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_slbc.ko"]
+c_ino = 300199
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_sync.ko"]
+c_ino = 300200
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_tinysys_ipi.ko"]
+c_ino = 300201
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtk_wdt.ko"]
+c_ino = 300202
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mtu3.ko"]
+c_ino = 300203
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/mux_switch.ko"]
+c_ino = 300204
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/nt36532.ko"]
+c_ino = 300205
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/nu2115_chargepump.ko"]
+c_ino = 300206
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/nvmem_mtk-devinfo.ko"]
+c_ino = 300207
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-alpha-jdi-nt36672e-cphy-vdo.ko"]
+c_ino = 300208
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-alpha-jdi-nt36672e-vdo-120hz-hfp.ko"]
+c_ino = 300209
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-alpha-jdi-nt36672e-vdo-120hz.ko"]
+c_ino = 300210
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-alpha-jdi-nt36672e-vdo-60hz.ko"]
+c_ino = 300211
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-nt36532-dsi-vdo-boe.ko"]
+c_ino = 300212
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-nt36532-dsi-vdo-tianma-paper.ko"]
+c_ino = 300213
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-nt36532-dsi-vdo-tianma.ko"]
+c_ino = 300214
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-nt37801-cmd-fhd.ko"]
+c_ino = 300215
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-samsung-ana6705-cmd.ko"]
+c_ino = 300216
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-truly-nt35595-cmd.ko"]
+c_ino = 300217
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/panel-truly-td4330-cmd.ko"]
+c_ino = 300218
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pd-chk-mt6897.ko"]
+c_ino = 300219
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pd_dbg_info.ko"]
+c_ino = 300220
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/phy-mtk-ufs.ko"]
+c_ino = 300221
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/phy-mtk-xsphy.ko"]
+c_ino = 300222
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pidmap.ko"]
+c_ino = 300223
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pinctrl-mt6897.ko"]
+c_ino = 300224
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pinctrl-mtk-common-v2_debug.ko"]
+c_ino = 300225
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pinctrl-mtk-v2.ko"]
+c_ino = 300226
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pmic_lbat_service.ko"]
+c_ino = 300227
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pmic_lvsys_notify.ko"]
+c_ino = 300228
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/ps5170.ko"]
+c_ino = 300229
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/pwm-mtk-disp.ko"]
+c_ino = 300230
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/reboot-mode.ko"]
+c_ino = 300231
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/regulator-vibrator.ko"]
+c_ino = 300232
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/reset-ti-syscon.ko"]
+c_ino = 300233
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/rpmb-mtk.ko"]
+c_ino = 300234
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/rpmb.ko"]
+c_ino = 300235
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/rt4831a_drv.ko"]
+c_ino = 300236
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/rt5133-regulator.ko"]
+c_ino = 300237
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/rt6160-regulator.ko"]
+c_ino = 300238
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/rt_pd_manager.ko"]
+c_ino = 300239
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/rtc-mt6685.ko"]
+c_ino = 300240
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/sec-rng.ko"]
+c_ino = 300241
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/sec.ko"]
+c_ino = 300242
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/sensors_class.ko"]
+c_ino = 300243
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/sgm37604a.ko"]
+c_ino = 300244
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/sgm37604a_second.ko"]
+c_ino = 300245
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/slbc_ipi.ko"]
+c_ino = 300246
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/slbc_mt6897.ko"]
+c_ino = 300247
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/slbc_trace.ko"]
+c_ino = 300248
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/sm5109.ko"]
+c_ino = 300249
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/smpu-hook-v1.ko"]
+c_ino = 300250
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/smpu.ko"]
+c_ino = 300251
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/spi-mt65xx.ko"]
+c_ino = 300252
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/spmi-mtk-mpu.ko"]
+c_ino = 300253
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/spmi-mtk-pmif.ko"]
+c_ino = 300254
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/syscon-reboot-mode.ko"]
+c_ino = 300255
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/system_heap.ko"]
+c_ino = 300256
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/tcpc_class.ko"]
+c_ino = 300257
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/tcpc_mt6375.ko"]
+c_ino = 300258
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/tcpci_late_sync.ko"]
+c_ino = 300259
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/teeperf.ko"]
+c_ino = 300260
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/timer-mediatek.ko"]
+c_ino = 300261
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/tinysys-scmi.ko"]
+c_ino = 300262
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/tui-common.ko"]
+c_ino = 300263
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/uarthub_drv.ko"]
+c_ino = 300264
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/ufs-mediatek-dbg.ko"]
+c_ino = 300265
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/ufs-mediatek-mod.ko"]
+c_ino = 300266
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/upm6720_chargepump.ko"]
+c_ino = 300267
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/usb_boost.ko"]
+c_ino = 300268
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/usb_dp_selector.ko"]
+c_ino = 300269
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/usb_meta.ko"]
+c_ino = 300270
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/vcp_status.ko"]
+c_ino = 300271
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["lib/modules/xhci-mtk-hcd-v2.ko"]
+c_ino = 300272
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[linkerconfig]
+c_ino = 300273
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[mnt]
+c_ino = 300274
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[odm]
+c_ino = 300275
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["odm/app"]
+c_ino = 300276
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/bin"]
+c_ino = 300277
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/etc"]
+c_ino = 300278
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/firmware"]
+c_ino = 300279
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/framework"]
+c_ino = 300280
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/lib"]
+c_ino = 300281
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/lib64"]
+c_ino = 300282
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/overlay"]
+c_ino = 300283
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/priv-app"]
+c_ino = 300284
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+["odm/usr"]
+c_ino = 300285
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+[odm_dlkm]
+c_ino = 300286
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["odm_dlkm/etc"]
+c_ino = 300287
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+[odm_file_contexts]
+c_ino = 300288
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[odm_property_contexts]
+c_ino = 300289
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[oem]
+c_ino = 300290
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[plat_file_contexts]
+c_ino = 300291
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[plat_property_contexts]
+c_ino = 300292
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[plat_service_contexts]
+c_ino = 300293
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[postinstall]
+c_ino = 300294
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[proc]
+c_ino = 300295
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[product]
+c_ino = 300296
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[product_file_contexts]
+c_ino = 300297
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[product_property_contexts]
+c_ino = 300298
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[product_service_contexts]
+c_ino = 300299
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["prop.default"]
+c_ino = 300300
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[res]
+c_ino = 300301
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["res/images"]
+c_ino = 300302
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["res/images/erasing_text.png"]
+c_ino = 300303
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/error_text.png"]
+c_ino = 300304
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/fastbootd.png"]
+c_ino = 300305
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/font.png"]
+c_ino = 300306
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/icon_error.png"]
+c_ino = 300307
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/installing_security_text.png"]
+c_ino = 300308
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/installing_text.png"]
+c_ino = 300309
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00000.png"]
+c_ino = 300310
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00001.png"]
+c_ino = 300311
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00002.png"]
+c_ino = 300312
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00003.png"]
+c_ino = 300313
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00004.png"]
+c_ino = 300314
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00005.png"]
+c_ino = 300315
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00006.png"]
+c_ino = 300316
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00007.png"]
+c_ino = 300317
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00008.png"]
+c_ino = 300318
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00009.png"]
+c_ino = 300319
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00010.png"]
+c_ino = 300320
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00011.png"]
+c_ino = 300321
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00012.png"]
+c_ino = 300322
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00013.png"]
+c_ino = 300323
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00014.png"]
+c_ino = 300324
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00015.png"]
+c_ino = 300325
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00016.png"]
+c_ino = 300326
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00017.png"]
+c_ino = 300327
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00018.png"]
+c_ino = 300328
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00019.png"]
+c_ino = 300329
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00020.png"]
+c_ino = 300330
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00021.png"]
+c_ino = 300331
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00022.png"]
+c_ino = 300332
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00023.png"]
+c_ino = 300333
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00024.png"]
+c_ino = 300334
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00025.png"]
+c_ino = 300335
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00026.png"]
+c_ino = 300336
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00027.png"]
+c_ino = 300337
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00028.png"]
+c_ino = 300338
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00029.png"]
+c_ino = 300339
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00030.png"]
+c_ino = 300340
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00031.png"]
+c_ino = 300341
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00032.png"]
+c_ino = 300342
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00033.png"]
+c_ino = 300343
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00034.png"]
+c_ino = 300344
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00035.png"]
+c_ino = 300345
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00036.png"]
+c_ino = 300346
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00037.png"]
+c_ino = 300347
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00038.png"]
+c_ino = 300348
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00039.png"]
+c_ino = 300349
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00040.png"]
+c_ino = 300350
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00041.png"]
+c_ino = 300351
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00042.png"]
+c_ino = 300352
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00043.png"]
+c_ino = 300353
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00044.png"]
+c_ino = 300354
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00045.png"]
+c_ino = 300355
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00046.png"]
+c_ino = 300356
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00047.png"]
+c_ino = 300357
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00048.png"]
+c_ino = 300358
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00049.png"]
+c_ino = 300359
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00050.png"]
+c_ino = 300360
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00051.png"]
+c_ino = 300361
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00052.png"]
+c_ino = 300362
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00053.png"]
+c_ino = 300363
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00054.png"]
+c_ino = 300364
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00055.png"]
+c_ino = 300365
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00056.png"]
+c_ino = 300366
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00057.png"]
+c_ino = 300367
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00058.png"]
+c_ino = 300368
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00059.png"]
+c_ino = 300369
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00060.png"]
+c_ino = 300370
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00061.png"]
+c_ino = 300371
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00062.png"]
+c_ino = 300372
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00063.png"]
+c_ino = 300373
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00064.png"]
+c_ino = 300374
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00065.png"]
+c_ino = 300375
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00066.png"]
+c_ino = 300376
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00067.png"]
+c_ino = 300377
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00068.png"]
+c_ino = 300378
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00069.png"]
+c_ino = 300379
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00070.png"]
+c_ino = 300380
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00071.png"]
+c_ino = 300381
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00072.png"]
+c_ino = 300382
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00073.png"]
+c_ino = 300383
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00074.png"]
+c_ino = 300384
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00075.png"]
+c_ino = 300385
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00076.png"]
+c_ino = 300386
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00077.png"]
+c_ino = 300387
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00078.png"]
+c_ino = 300388
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00079.png"]
+c_ino = 300389
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00080.png"]
+c_ino = 300390
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00081.png"]
+c_ino = 300391
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00082.png"]
+c_ino = 300392
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00083.png"]
+c_ino = 300393
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00084.png"]
+c_ino = 300394
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00085.png"]
+c_ino = 300395
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00086.png"]
+c_ino = 300396
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00087.png"]
+c_ino = 300397
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00088.png"]
+c_ino = 300398
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00089.png"]
+c_ino = 300399
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/loop00090.png"]
+c_ino = 300400
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/no_command_text.png"]
+c_ino = 300401
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/progress_empty.png"]
+c_ino = 300402
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/progress_fill.png"]
+c_ino = 300403
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/stage_empty.png"]
+c_ino = 300404
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["res/images/stage_fill.png"]
+c_ino = 300405
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[sdcard]
+c_ino = 300406
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o777"
+
+[second_stage_resources]
+c_ino = 300407
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[sepolicy]
+c_ino = 300408
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[storage]
+c_ino = 300409
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o751"
+
+[sys]
+c_ino = 300410
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[system]
+c_ino = 300411
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/bin"]
+c_ino = 300412
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o751"
+
+["system/bin/["]
+c_ino = 300413
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/acpi"]
+c_ino = 300414
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/adbd"]
+c_ino = 300415
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/base64"]
+c_ino = 300416
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/basename"]
+c_ino = 300417
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/blockdev"]
+c_ino = 300418
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/brctl"]
+c_ino = 300419
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/cal"]
+c_ino = 300420
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/cat"]
+c_ino = 300421
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/chattr"]
+c_ino = 300422
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/chcon"]
+c_ino = 300423
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/chgrp"]
+c_ino = 300424
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/chmod"]
+c_ino = 300425
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/chown"]
+c_ino = 300426
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/chroot"]
+c_ino = 300427
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/chrt"]
+c_ino = 300428
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/cksum"]
+c_ino = 300429
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/clear"]
+c_ino = 300430
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/cmp"]
+c_ino = 300431
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/comm"]
+c_ino = 300432
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/cp"]
+c_ino = 300433
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/cpio"]
+c_ino = 300434
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/cut"]
+c_ino = 300435
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/date"]
+c_ino = 300436
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/dd"]
+c_ino = 300437
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/defrag.f2fs"]
+c_ino = 300438
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/devmem"]
+c_ino = 300439
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/df"]
+c_ino = 300440
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/diff"]
+c_ino = 300441
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/dirname"]
+c_ino = 300442
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/dmesg"]
+c_ino = 300443
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/dos2unix"]
+c_ino = 300444
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/du"]
+c_ino = 300445
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/dump.erofs"]
+c_ino = 300446
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/dump.f2fs"]
+c_ino = 300447
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/e2fsdroid"]
+c_ino = 300448
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/echo"]
+c_ino = 300449
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/egrep"]
+c_ino = 300450
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/env"]
+c_ino = 300451
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/expand"]
+c_ino = 300452
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/expr"]
+c_ino = 300453
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/fallocate"]
+c_ino = 300454
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/false"]
+c_ino = 300455
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/fastbootd"]
+c_ino = 300456
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/fgrep"]
+c_ino = 300457
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/file"]
+c_ino = 300458
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/find"]
+c_ino = 300459
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/flock"]
+c_ino = 300460
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/fmt"]
+c_ino = 300461
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/free"]
+c_ino = 300462
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/fsck.erofs"]
+c_ino = 300463
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/fsck.f2fs"]
+c_ino = 300464
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/fsync"]
+c_ino = 300465
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/getconf"]
+c_ino = 300466
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/getenforce"]
+c_ino = 300467
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/getevent"]
+c_ino = 300468
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/getprop"]
+c_ino = 300469
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/grep"]
+c_ino = 300470
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/groups"]
+c_ino = 300471
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/gunzip"]
+c_ino = 300472
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/gzip"]
+c_ino = 300473
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/head"]
+c_ino = 300474
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/hostname"]
+c_ino = 300475
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/hw"]
+c_ino = 300476
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o751"
+
+["system/bin/hw/android.hardware.boot-service.mtk_recovery"]
+c_ino = 300477
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/hw/android.hardware.health-service.example_recovery"]
+c_ino = 300478
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/hwclock"]
+c_ino = 300479
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/i2cdetect"]
+c_ino = 300480
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/i2cdump"]
+c_ino = 300481
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/i2cget"]
+c_ino = 300482
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/i2cset"]
+c_ino = 300483
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/iconv"]
+c_ino = 300484
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/id"]
+c_ino = 300485
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/ifconfig"]
+c_ino = 300486
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/init"]
+c_ino = 300487
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/inotifyd"]
+c_ino = 300488
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/insmod"]
+c_ino = 300489
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/install"]
+c_ino = 300490
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/ionice"]
+c_ino = 300491
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/iorenice"]
+c_ino = 300492
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/kill"]
+c_ino = 300493
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/killall"]
+c_ino = 300494
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/linker64"]
+c_ino = 300495
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/linker_asan64"]
+c_ino = 300496
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/linker_hwasan64"]
+c_ino = 300497
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/ln"]
+c_ino = 300498
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/load_policy"]
+c_ino = 300499
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/log"]
+c_ino = 300500
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/logger"]
+c_ino = 300501
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/logname"]
+c_ino = 300502
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/losetup"]
+c_ino = 300503
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/ls"]
+c_ino = 300504
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/lsattr"]
+c_ino = 300505
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/lsmod"]
+c_ino = 300506
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/lsof"]
+c_ino = 300507
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/lspci"]
+c_ino = 300508
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/lsusb"]
+c_ino = 300509
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/make_f2fs"]
+c_ino = 300510
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/md5sum"]
+c_ino = 300511
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/microcom"]
+c_ino = 300512
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/minadbd"]
+c_ino = 300513
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/mkdir"]
+c_ino = 300514
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mke2fs"]
+c_ino = 300515
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/mkfifo"]
+c_ino = 300516
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mkfs.erofs"]
+c_ino = 300517
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/mkfs.ext2"]
+c_ino = 300518
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mkfs.ext3"]
+c_ino = 300519
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mkfs.ext4"]
+c_ino = 300520
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mknod"]
+c_ino = 300521
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mkswap"]
+c_ino = 300522
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mktemp"]
+c_ino = 300523
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/modinfo"]
+c_ino = 300524
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/modprobe"]
+c_ino = 300525
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/more"]
+c_ino = 300526
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mount"]
+c_ino = 300527
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mountpoint"]
+c_ino = 300528
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/mtk_plpath_utils"]
+c_ino = 300529
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/mv"]
+c_ino = 300530
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/nc"]
+c_ino = 300531
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/netcat"]
+c_ino = 300532
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/netstat"]
+c_ino = 300533
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/nice"]
+c_ino = 300534
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/nl"]
+c_ino = 300535
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/nohup"]
+c_ino = 300536
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/nproc"]
+c_ino = 300537
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/nsenter"]
+c_ino = 300538
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/od"]
+c_ino = 300539
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/paste"]
+c_ino = 300540
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/patch"]
+c_ino = 300541
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/pgrep"]
+c_ino = 300542
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/pidof"]
+c_ino = 300543
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/pkill"]
+c_ino = 300544
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/pmap"]
+c_ino = 300545
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/printenv"]
+c_ino = 300546
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/printf"]
+c_ino = 300547
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/ps"]
+c_ino = 300548
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/pwd"]
+c_ino = 300549
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/readelf"]
+c_ino = 300550
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/readlink"]
+c_ino = 300551
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/realpath"]
+c_ino = 300552
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/reboot"]
+c_ino = 300553
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/recovery"]
+c_ino = 300554
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/renice"]
+c_ino = 300555
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/resize.f2fs"]
+c_ino = 300556
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/restorecon"]
+c_ino = 300557
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/rm"]
+c_ino = 300558
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/rmdir"]
+c_ino = 300559
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/rmmod"]
+c_ino = 300560
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/rtcwake"]
+c_ino = 300561
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/runcon"]
+c_ino = 300562
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sed"]
+c_ino = 300563
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sendevent"]
+c_ino = 300564
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/seq"]
+c_ino = 300565
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/servicemanager"]
+c_ino = 300566
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/setenforce"]
+c_ino = 300567
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/setprop"]
+c_ino = 300568
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/setsid"]
+c_ino = 300569
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sh"]
+c_ino = 300570
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/sha1sum"]
+c_ino = 300571
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sha224sum"]
+c_ino = 300572
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sha256sum"]
+c_ino = 300573
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sha384sum"]
+c_ino = 300574
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sha512sum"]
+c_ino = 300575
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sleep"]
+c_ino = 300576
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sload_f2fs"]
+c_ino = 300577
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/sort"]
+c_ino = 300578
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/split"]
+c_ino = 300579
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/start"]
+c_ino = 300580
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/stat"]
+c_ino = 300581
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/stop"]
+c_ino = 300582
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/strings"]
+c_ino = 300583
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/stty"]
+c_ino = 300584
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/swapoff"]
+c_ino = 300585
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/swapon"]
+c_ino = 300586
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sync"]
+c_ino = 300587
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/sysctl"]
+c_ino = 300588
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/tac"]
+c_ino = 300589
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/tail"]
+c_ino = 300590
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/tar"]
+c_ino = 300591
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/taskset"]
+c_ino = 300592
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/tee"]
+c_ino = 300593
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/test"]
+c_ino = 300594
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/time"]
+c_ino = 300595
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/timeout"]
+c_ino = 300596
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/toolbox"]
+c_ino = 300597
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/top"]
+c_ino = 300598
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/touch"]
+c_ino = 300599
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/toybox"]
+c_ino = 300600
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/tr"]
+c_ino = 300601
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/true"]
+c_ino = 300602
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/truncate"]
+c_ino = 300603
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/tty"]
+c_ino = 300604
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/uclampset"]
+c_ino = 300605
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/ueventd"]
+c_ino = 300606
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/ulimit"]
+c_ino = 300607
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/umount"]
+c_ino = 300608
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/uname"]
+c_ino = 300609
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/uniq"]
+c_ino = 300610
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/unix2dos"]
+c_ino = 300611
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/unlink"]
+c_ino = 300612
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/unshare"]
+c_ino = 300613
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/unzip"]
+c_ino = 300614
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/update_engine_sideload"]
+c_ino = 300615
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/uptime"]
+c_ino = 300616
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/usleep"]
+c_ino = 300617
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/uudecode"]
+c_ino = 300618
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/uuencode"]
+c_ino = 300619
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/uuidgen"]
+c_ino = 300620
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/vi"]
+c_ino = 300621
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/vmstat"]
+c_ino = 300622
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/watch"]
+c_ino = 300623
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/watchdogd"]
+c_ino = 300624
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/bin/wc"]
+c_ino = 300625
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/which"]
+c_ino = 300626
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/whoami"]
+c_ino = 300627
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/xargs"]
+c_ino = 300628
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/xxd"]
+c_ino = 300629
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/yes"]
+c_ino = 300630
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/zcat"]
+c_ino = 300631
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/zipinfo"]
+c_ino = 300632
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o755"
+
+["system/bin/ziptool"]
+c_ino = 300633
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o755"
+
+["system/etc"]
+c_ino = 300634
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/etc/cgroups.json"]
+c_ino = 300635
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/init"]
+c_ino = 300636
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/etc/init/android.hardware.boot-service.mtk_recovery.rc"]
+c_ino = 300637
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/init/android.hardware.health-service.example_recovery.rc"]
+c_ino = 300638
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/init/hw"]
+c_ino = 300639
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/etc/init/hw/init.rc"]
+c_ino = 300640
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/init/mtk-plpath-utils.rc"]
+c_ino = 300641
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/init/servicemanager.recovery.rc"]
+c_ino = 300642
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/ld.config.txt"]
+c_ino = 300643
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/mke2fs.conf"]
+c_ino = 300644
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/recovery.fstab"]
+c_ino = 300645
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/security"]
+c_ino = 300646
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/etc/security/otacerts.zip"]
+c_ino = 300647
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/ueventd.rc"]
+c_ino = 300648
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/vintf"]
+c_ino = 300649
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/etc/vintf/manifest"]
+c_ino = 300650
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/etc/vintf/manifest/android.hardware.boot-service.mtk.xml"]
+c_ino = 300651
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/etc/vintf/manifest/android.hardware.health-service.example.xml"]
+c_ino = 300652
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64"]
+c_ino = 300653
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/lib64/android.hardware.boot-V1-ndk.so"]
+c_ino = 300654
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.boot@1.0.so"]
+c_ino = 300655
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.boot@1.1.so"]
+c_ino = 300656
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.boot@1.2.so"]
+c_ino = 300657
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.fastboot-V1-ndk.so"]
+c_ino = 300658
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.fastboot@1.0.so"]
+c_ino = 300659
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.fastboot@1.1.so"]
+c_ino = 300660
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.health-V2-ndk.so"]
+c_ino = 300661
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.health@1.0.so"]
+c_ino = 300662
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/android.hardware.health@2.0.so"]
+c_ino = 300663
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/hw"]
+c_ino = 300664
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["system/lib64/hw/android.hardware.fastboot@1.0-impl-mtk.so"]
+c_ino = 300665
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/hw/android.hardware.health@2.0-impl-default.so"]
+c_ino = 300666
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/ld-android.so"]
+c_ino = 300667
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libadbd_auth.so"]
+c_ino = 300668
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libadbd_fs.so"]
+c_ino = 300669
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libasyncio.so"]
+c_ino = 300670
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libbase.so"]
+c_ino = 300671
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libbinder.so"]
+c_ino = 300672
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libbinder_ndk.so"]
+c_ino = 300673
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libboot_control_client.so"]
+c_ino = 300674
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libbootloader_message.so"]
+c_ino = 300675
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libc++.so"]
+c_ino = 300676
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libc.so"]
+c_ino = 300677
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libcgrouprc.so"]
+c_ino = 300678
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libcrypto.so"]
+c_ino = 300679
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libcrypto_utils.so"]
+c_ino = 300680
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libcutils.so"]
+c_ino = 300681
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libdl.so"]
+c_ino = 300682
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libext2_blkid.so"]
+c_ino = 300683
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libext2_com_err.so"]
+c_ino = 300684
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libext2_e2p.so"]
+c_ino = 300685
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libext2_misc.so"]
+c_ino = 300686
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libext2_quota.so"]
+c_ino = 300687
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libext2_uuid.so"]
+c_ino = 300688
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libext2fs.so"]
+c_ino = 300689
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libext4_utils.so"]
+c_ino = 300690
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libfec.so"]
+c_ino = 300691
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libfs_mgr.so"]
+c_ino = 300692
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libfusesideload.so"]
+c_ino = 300693
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libgsi.so"]
+c_ino = 300694
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libhidl-gen-utils.so"]
+c_ino = 300695
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libhidlbase.so"]
+c_ino = 300696
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libjsoncpp.so"]
+c_ino = 300697
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libkeyutils.so"]
+c_ino = 300698
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/liblog.so"]
+c_ino = 300699
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/liblogwrap.so"]
+c_ino = 300700
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/liblp.so"]
+c_ino = 300701
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/liblz4.so"]
+c_ino = 300702
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/liblzma.so"]
+c_ino = 300703
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libm.so"]
+c_ino = 300704
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libmtk_bsg.so"]
+c_ino = 300705
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libpackagelistparser.so"]
+c_ino = 300706
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libpcre2.so"]
+c_ino = 300707
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libpng.so"]
+c_ino = 300708
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libprocessgroup.so"]
+c_ino = 300709
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libprocessgroup_setup.so"]
+c_ino = 300710
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libprotobuf-cpp-lite.so"]
+c_ino = 300711
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/librecovery_ui.so"]
+c_ino = 300712
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/librecovery_ui_ext.so"]
+c_ino = 300713
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libselinux.so"]
+c_ino = 300714
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libsparse.so"]
+c_ino = 300715
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libsquashfs_utils.so"]
+c_ino = 300716
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libtinyxml2.so"]
+c_ino = 300717
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libunwindstack.so"]
+c_ino = 300718
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libutils.so"]
+c_ino = 300719
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libvintf.so"]
+c_ino = 300720
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libz.so"]
+c_ino = 300721
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["system/lib64/libziparchive.so"]
+c_ino = 300722
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[system_dlkm]
+c_ino = 300723
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[system_ext]
+c_ino = 300724
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+[system_ext_file_contexts]
+c_ino = 300725
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[system_ext_property_contexts]
+c_ino = 300726
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[system_ext_service_contexts]
+c_ino = 300727
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[tmp]
+c_ino = 300728
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[vendor]
+c_ino = 300729
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+[vendor_dlkm]
+c_ino = 300730
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 16384
+file_mode = "0o755"
+
+["vendor_dlkm/etc"]
+c_ino = 300731
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 40960
+file_mode = "0o644"
+
+[vendor_file_contexts]
+c_ino = 300732
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[vendor_property_contexts]
+c_ino = 300733
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+[vendor_service_contexts]
+c_ino = 300734
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+file_type = 32768
+file_mode = "0o644"
+
+["TRAILER!!!"]
+c_ino = 300735
+c_uid = 0
+c_gid = 0
+c_nlink = 1
+c_mtime = 0
+c_dev_maj = 0
+c_dev_min = 0
+c_rdev_maj = 0
+c_rdev_min = 0
+c_mode = 493
