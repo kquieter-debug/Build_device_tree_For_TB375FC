@@ -1,0 +1,14 @@
+/home/runner/work/Build_device_tree_For_TB375FC/Build_device_tree_For_TB375FC/device_tree:
+DEVICE_TREE_LIST.txt
+main_dtb
+overlay_dtbo
+
+/home/runner/work/Build_device_tree_For_TB375FC/Build_device_tree_For_TB375FC/device_tree/main_dtb:
+00_kernel
+01_dtbdump_MT6897.dtb
+01_dtbdump_MT6897.dts
+
+/home/runner/work/Build_device_tree_For_TB375FC/Build_device_tree_For_TB375FC/device_tree/overlay_dtbo:
+dtbo.dtb
+dtbo.img
+dtbo_original.dts
