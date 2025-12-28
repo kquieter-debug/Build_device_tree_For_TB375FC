@@ -1,0 +1,97 @@
+# 设备树 静态语法/结构完整性 全自动校验 Workflow
+# 校验范围: DTS/DTB 主设备树 + DTBO 设备树叠加层 全格式校验
+name: Android Device Tree Static Verify (DTS/DTB/DTBO)
+
+# 触发条件【按需选择，全部可选，推荐保留前2个即可】
+on:
+  # 1. 提交代码/合并PR时，自动触发校验（最常用）
+  push:
+    branches: [ main, master, lineage-20.0, android-14 ] # 改成你的仓库分支名
+  pull_request:
+    branches: [ main, master, lineage-20.0, android-14 ]
+  # 2. 手动在GitHub页面点击「运行工作流」触发校验（非常实用）
+  workflow_dispatch:
+  # 3. 定时触发（可选，比如每天凌晨校验一次）
+  # schedule:
+  #   - cron: '0 0 * * *'
+
+# 运行权限
+permissions:
+  contents: read
+
+jobs:
+  dt-validation:
+    name: 设备树语法&结构校验
+    runs-on: ubuntu-latest # 官方ubuntu镜像，稳定无坑
+    timeout-minutes: 10 # 超时时间，足够完成校验
+
+    steps:
+      - name: ① 拉取仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: ② 安装设备树编译/校验核心依赖 (dtc+相关工具)
+        run: |
+          echo "✅ 开始安装设备树编译器 dtc 和必要依赖"
+          sudo apt update -y
+          # 安装dtc(核心) + 编译依赖 + 查找文件工具，都是ubuntu官方源，稳定
+          sudo apt install -y device-tree-compiler build-essential findutils grep
+
+      - name: ③ 校验 DTC 版本 & 环境检查
+        run: |
+          echo "✅ 当前设备树编译器版本:"
+          dtc --version
+          echo "✅ 工作目录:"
+          pwd
+          ls -la
+          echo "✅ 环境检查完成"
+
+      - name: ④ 核心步骤 - 全局扫描 并 校验【所有DTS/DTB文件】(主设备树)
+        run: |
+          echo -e "\n=================================================="
+          echo "📌 开始校验 所有 .dts / .dtb 格式 主设备树文件"
+          echo "=================================================="
+          # 递归查找仓库所有 .dts 和 .dtb 文件，逐个校验，有错误立即终止并输出详情
+          find . -type f \( -name "*.dts" -o -name "*.dtb" \) | while read dt_file; do
+            echo -e "\n🔍 正在校验文件: $dt_file"
+            if [[ "$dt_file" == *.dts ]]; then
+              # DTS 源码文件校验语法
+              dtc -I dts -O dtb -o /dev/null "$dt_file" 2>&1
+            else
+              # DTB 编译后文件校验 + 反编译完整性校验
+              dtc -I dtb -O dts -o /dev/null "$dt_file" 2>&1
+            fi
+            # 校验失败则退出并返回错误码
+            if [ $? -eq 0 ]; then
+              echo "✅ $dt_file - 语法&结构 校验通过 ✔️"
+            else
+              echo -e "\n❌ 错误: $dt_file - 语法/结构 校验失败 ❌"
+              exit 1
+            fi
+          done
+
+      - name: ⑤ 核心步骤 - 全局扫描 并 校验【所有DTBO文件】(设备树叠加层 重点!)
+        run: |
+          echo -e "\n=================================================="
+          echo "📌 开始校验 所有 .dtbo / overlay dtb 格式 叠加层文件"
+          echo "=================================================="
+          # DTBO叠加层必须加 -@ 参数，是安卓DTBO的强制规范，不加校验无意义
+          find . -type f \( -name "*.dtbo" -o -name "*dtbo*.dtb" -o -name "*overlay*.dtb" \) | while read dtbo_file; do
+            echo -e "\n🔍 正在校验DTBO文件: $dtbo_file"
+            dtc -@ -I dtb -O dts -o /dev/null "$dtbo_file" 2>&1
+            if [ $? -eq 0 ]; then
+              echo "✅ $dtbo_file - DTBO叠加层 语法&结构 校验通过 ✔️"
+            else
+              echo -e "\n❌ 错误: $dtbo_file - DTBO叠加层 校验失败 ❌"
+              exit 1
+            fi
+          done
+
+      - name: ⑥ 最终校验结果汇总
+        run: |
+          echo -e "\n=================================================="
+          echo "🎉 所有校验步骤完成！"
+          echo "✅ 本仓库的 安卓设备树 所有文件：DTS/DTB 主树 + DTBO 叠加层"
+          echo "✅ 全部通过 静态语法合法性 + 结构完整性 校验！"
+          echo "=================================================="
